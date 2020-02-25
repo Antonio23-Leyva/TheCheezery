@@ -44,15 +44,16 @@
             android:textAlignment="center"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_getstarted"
+            android:layout_width="219dp"
+            android:layout_height="33dp"
             android:layout_margin="10dp"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
-            android:layout_height="wrap_content"
             android:text="@string/get_started"
             android:layout_gravity="center"
             android:textColor="@color/dustyWhite"
-            android:background="@color/colorAccent"
+            android:background="@drawable/round_button"
             />
 
     </LinearLayout>

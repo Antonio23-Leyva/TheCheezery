@@ -17,5 +17,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //var prueba: Intent? = null
+
+
     }
 }

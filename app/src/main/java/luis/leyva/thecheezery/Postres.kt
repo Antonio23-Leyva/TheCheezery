@@ -1,4 +1,4 @@
-package mx.itson.thecheezery
+package luis.leyva.thecheezery
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
@@ -9,31 +9,39 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import kotlinx.android.synthetic.main.activity_productos.*
 import kotlinx.android.synthetic.main.producto_view.view.*
+import mx.itson.thecheezery.R
 
-class ProductosActivity : AppCompatActivity() {
+class Postres : AppCompatActivity() {
     var coldDrinks = ArrayList<Product>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_productos)
+        setContentView(R.layout.activity_postres)
 
-        cargarProductos()
+         cargarPostres()
 
         var adaptador = AdaptadorProductos(this, coldDrinks)
         listview.adapter = adaptador
-    }
-
-    fun cargarProductos(){
-        coldDrinks.add(Product("Caramel Frap", R.drawable.caramelfrap, "Caramel syrup meets coffee, milk and ice and whipped cream and buttery caramel sauce layer the love on top.", 5))
-        coldDrinks.add(Product("Chocolate Frap", R.drawable.chocolatefrap, "Rich mocha-flavored sauce meets up with chocolaty chips, milk and ice for a blender bash.", 6))
-        coldDrinks.add(Product("Cold Brew", R.drawable.coldbrew, "Created by steeping medium-tocoarse ground coffee in room temperature water for 12 hours or longer.", 3))
-        coldDrinks.add(Product("Matcha Latte", R.drawable.matcha, "Leafy taste of matcha green tea powder with creamy milk and a little sugar for a flavor balance that will leave you feeling ready and raring to go.", 4))
-        coldDrinks.add(Product("Oreo Milkshake", R.drawable.oreomilkshake, "Chocolate ice cream, and oreo cookies. Topped with whipped cream with cocoa and chocolate syrup.", 7))
-        coldDrinks.add(Product("Peanut Milkshake", R.drawable.peanutmilkshake, "Vanilla ice cream, mixed with peanut butter and chocolate.", 7))
 
     }
 
-    private class AdaptadorProductos:BaseAdapter{
+    fun cargarPostres(){
+        coldDrinks.add(Product("Blueberry cake",
+            R.drawable.blueberrycake, "vainilla cake flavor, topped with cheese topping and blueberries.", 6))
+        coldDrinks.add(Product("Chocolate cupcake",
+            R.drawable.chocolatecupcake, "Chocolate cupcakes topped with butter cream and cherries", 3))
+        coldDrinks.add(Product("Lemon tartalette",
+            R.drawable.lemontartalette, "pastry shell with a lemon flavored filling", 4))
+        coldDrinks.add(Product("Red Velvet cake",
+            R.drawable.redvelvetcake, "soft, moist, buttery cake with an easy cream cheese frosting", 6))
+        coldDrinks.add(Product("Cherry cheesecake",
+            R.drawable.strawberrycheesecake, "This cherry topped cheesecake is positively creamy and delicious and will be you new favorite desert", 7))
+        coldDrinks.add(Product("Tiramisu", R.drawable.tiramisu, "Coffe-falvored italian dessert", 6))
+
+    }
+
+
+    private class AdaptadorProductos: BaseAdapter {
         var productos = ArrayList<Product>()
         var contexto: Context? = null
 
@@ -56,16 +64,17 @@ class ProductosActivity : AppCompatActivity() {
         }
 
         override fun getItem(position: Int): Any {
-           return productos[position]
+            return productos[position]
         }
 
         override fun getItemId(position: Int): Long {
-           return position.toLong()
+            return position.toLong()
         }
 
         override fun getCount(): Int {
-          return productos.size
+            return productos.size
         }
 
     }
+
 }

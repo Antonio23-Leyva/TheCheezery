@@ -1,9 +1,10 @@
-package mx.itson.thecheezery
+package luis.leyva.thecheezery
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import mx.itson.thecheezery.R
 
 class MainActivity : AppCompatActivity() {
 

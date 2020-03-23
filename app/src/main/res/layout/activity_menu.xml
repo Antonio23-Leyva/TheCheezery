@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MenuActivity">
+    tools:context="luis.leyva.thecheezery.MenuActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -46,6 +46,7 @@
                 android:textColor="@color/dustyWhite"/>
 
             <Button
+                android:id="@+id/btn_hot_drinks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/btn2"
@@ -66,6 +67,7 @@
             >
 
             <Button
+                android:id="@+id/btn_sweets"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/btn3"
@@ -78,6 +80,7 @@
                 android:textColor="@color/dustyWhite"/>
 
             <Button
+                android:id="@+id/btn_salties"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/btn4"
@@ -90,37 +93,44 @@
                 android:textColor="@color/dustyWhite"/>
 
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
 
             <Button
+                android:id="@+id/btn_combos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn5"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"
+                android:layout_marginTop="2dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/degradado"
-                android:textSize="20sp"
                 android:fontFamily="sans-serif"
-                android:textColor="@color/dustyWhite"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn6"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
+                android:text="@string/btn5"
+                android:textColor="@color/dustyWhite"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_perzonalized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/degradado"
-                android:textSize="20sp"
                 android:fontFamily="sans-serif"
-                android:textColor="@color/dustyWhite"/>
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/btn6"
+                android:textColor="@color/dustyWhite"
+                android:textSize="20sp" />
 
         </TableRow>
+
+
+
+
     </TableLayout>
 
 </LinearLayout>

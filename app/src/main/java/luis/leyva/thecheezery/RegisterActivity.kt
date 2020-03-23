@@ -1,7 +1,8 @@
-package mx.itson.thecheezery
+package luis.leyva.thecheezery
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import mx.itson.thecheezery.R
 
 class RegisterActivity : AppCompatActivity() {
 

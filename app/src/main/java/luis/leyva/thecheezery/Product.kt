@@ -1,4 +1,4 @@
-package mx.itson.thecheezery
+package luis.leyva.thecheezery
 
 data class Product(var name: String,
                    var image: Int,

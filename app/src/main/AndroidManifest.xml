@@ -9,10 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProductosActivity"></activity>
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="luis.leyva.thecheezery.HotDrinks"></activity>
+        <activity android:name="luis.leyva.thecheezery.Salties" />
+        <activity android:name=".comboGrid" />
+        <activity android:name="luis.leyva.thecheezery.productoCombo" />
+        <activity android:name="luis.leyva.thecheezery.Combos" />
+        <activity android:name="luis.leyva.thecheezery.Postres" />
+        <activity android:name="luis.leyva.thecheezery.ProductosActivity" />
+        <activity android:name="luis.leyva.thecheezery.MenuActivity" />
+        <activity android:name="luis.leyva.thecheezery.RegisterActivity" />
+        <activity android:name="luis.leyva.thecheezery.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
